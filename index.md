@@ -1,10 +1,4 @@
-## Emissions API
-
 *A [Prototype Fund](https://prototypefund.de/project/emissions-api/) project.*
-
-- [Twitter](https://twitter.com/emissions_api)
-- [Mastodon](https://mastodon.social/@emissions_api)
-- [Blog](https://blog.emissions-api.org/)
 
 > **tl;dr** The European Space Agency's Sentinel-5p satellite is built to
 > observe emissions (carbon hydroxide, sulfur monoxide, ozone, …). All data
@@ -56,3 +50,8 @@ the satellite data of the Copernicus program, but who do not want to work with
 the huge amount scientific data directly. We will provide examples and
 libraries to quickly get you started without being an expert in satellite data
 analysis.
+
+
+- [Twitter](https://twitter.com/emissions_api)
+- [Mastodon](https://mastodon.social/@emissions_api)
+- [Blog](https://blog.emissions-api.org/)
