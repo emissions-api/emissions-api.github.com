@@ -1,16 +1,16 @@
 *A [Prototype Fund](https://prototypefund.de/project/emissions-api/) project.*
 
-> **tl;dr** The European Space Agency's Sentinel-5p satellite is built to
+> **tl;dr** The European Space Agency's Sentinel-5P satellite is built to
 > observe emissions (carbon hydroxide, sulfur monoxide, ozone, …). All data
-> gathered is publicly available …if you know what to do with those data sets,
-> that is.
+> gathered are publicly available …if you know what to do with those data sets,
+> great, but if not:
 >
-> Emission API's mission is to provide easy access to this data without the
+> Emissions API's mission is to provide easy access to this data without the
 > need of being an expert in satellite data analysis and without having to
 > process terabytes of data.
 >
 > This way, we hope to empower others to easily build apps like visually showing
-> missions of countries over time.
+> emissions of countries over time.
 
 
 Social challenge we want to address
