@@ -9,7 +9,7 @@
 > need of being an expert in satellite data analysis and without having to
 > process terabytes of data.
 >
-> This way, we hope to empower others to easily build apps that use this data - 
+> This way, we hope to empower others to easily build apps that use this data –
 > e.g. visually showing emissions of countries over time.
 
 
