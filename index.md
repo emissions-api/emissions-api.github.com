@@ -27,7 +27,7 @@ comparing actual measurements from before and after on a map.
 Emissions API is a solution that provides simple access to emissions data of
 climate-relevant gases. For this purpose, data of the European Space Agency's
 Sentinel-5P earth observation satellite will be prepared in such a way that it
-allows programmers an easy access without the need ot have a scientific background
+allows programmers easy access without the need to have a scientific background
 in the field.
 
 The project strives to create an application interface which lowers the barrier
