@@ -3,15 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy"
-          content="default-src 'none'; font-src 'self' data:; img-src 'self'; script-src 'self' https://code.jquery.com/jquery-1.12.4.min.js; style-src 'self' 'unsafe-inline' ">
+          content="default-src 'none'; font-src 'self' data:; img-src 'self'; script-src 'self'; style-src 'self' ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-            crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
@@ -26,18 +22,35 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
           <a class=button href="{{ site.github.owner_url }}">View On GitHub</a>
         </div>
 
         {{ content }}
 
-        <div><img src="{{ '/assets/img/BMBF_gefoerdert_2017_en.jpg' | relative_url }}" 
-          width="30%"/></div>
-
       </section>
 
     </div>
+
+    <footer>
+
+      <a href=https://okfn.de/en
+         title="Open Knowledge Foundation Deutschland e.V.">
+         <img src="{{ '/assets/img/okfn.svg' | relative_url }}"
+              alr="Logo of the Open Knowledge Foundation Deutschland e.V."/>
+      </a>
+      <a href=https://bmbf.de/en
+         title="Sponsored by the German Federal Ministry of Education and Research">
+         <img src="{{ '/assets/img/bmbf.svg' | relative_url }}"
+              alt="Sponsored by the German Federal Ministry of Education and Research"/>
+      </a>
+
+      <div class=credits>
+        Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+        &mdash;
+        Hosted on GitHub Pages
+        &mdash;
+        Theme by <a href="https://twitter.com/mattgraham">mattgraham</a>
+      </div>
+    </footer>
   </body>
 </html>

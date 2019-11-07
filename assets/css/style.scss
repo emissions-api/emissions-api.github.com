@@ -4,33 +4,43 @@
 @import "jekyll-theme-midnight";
 
 #title {
-	text-align: center;
+  text-align: center;
 }
 
 #title a.button {
-	display: inline-block;
-	padding: 10px 12px;
-	background-color: #93bd20;
-	color: white;
-	border: none;
-	border-radius: 5px;
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: #93bd20;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 #title a.button:hover {
-	background-color: #7a1;
-	color: white;
+  background-color: #7a1;
+  color: white;
 }
 
 #title img {
-	width: 70px;
+  width: 70px;
 }
 
 .credits {
-	position: absolute;
-	bottom: 3px;
-	float: none !important;
+  background-color: #252525;
+  padding: 25px;
 }
 
 .right {
-	right: 0px;
+  right: 0px;
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+}
+
+footer img {
+  vertical-align: middle;
+  max-width: 250px;
+  margin: 25px;
 }
