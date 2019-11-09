@@ -2,8 +2,6 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Security-Policy"
-          content="default-src 'none'; font-src 'self' data:; img-src 'self'; script-src 'self'; style-src 'self' ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 {% seo %}
@@ -22,10 +20,18 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
+
+          {% if page.name == "index.md" %}
           <a class=button
              href=https://demo.emissions-api.org>
              API <span>alpha</span></a>
-          <a class=button href="{{ site.github.owner_url }}">View On GitHub</a>
+          <a class=button
+             href="{{ site.github.owner_url }}">
+             View On GitHub</a>
+          <a class=button
+             href=example.html>
+             Examples</a>
+          {% endif %}
         </div>
 
         {{ content }}
