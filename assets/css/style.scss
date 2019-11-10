@@ -55,3 +55,9 @@ footer img {
   max-height: 100px;
   margin: 25px;
 }
+
+@media (max-width: 730px) {
+  footer a {
+    display: block;
+  }
+}
