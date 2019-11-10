@@ -14,11 +14,21 @@
   color: white;
   border: none;
   border-radius: 5px;
+  min-width: 100px;
+  margin: 15px;
 }
 
 #title a.button:hover {
   background-color: #7a1;
   color: white;
+}
+
+.button span {
+  vertical-align: 15%;
+  font-size: 8px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2px 5px;
 }
 
 #title img {
