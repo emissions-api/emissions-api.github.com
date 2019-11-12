@@ -109,14 +109,14 @@ Here we use the [jsdeliver](https://jsdelivr.com/package/npm/chart.js?path=dist)
 </script>
 ```
 
-We can now create a simple line-chart with just a few lines of code.
+We can now create a simple bar-chart with just a few lines of code.
 Here we supply the chart with both data and labels simply by using a fixed array of values.
 This is where our requested data will be used later.
 
 ```js
 let ctx = document.getElementById('average-example').getContext('2d');
 new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: ['a', 'b', 'c'],
         datasets: [{
@@ -184,7 +184,7 @@ window.onload = function () {
     .then(data => {
         let ctx = document.getElementById('average-example').getContext('2d');
         new Chart(ctx, {
-            type: 'line',
+            type: 'bar',
             data: {
                 // use start times contained in the requested data as labels
                 labels: data.map(x => x.start.substring(8, 10)),
@@ -236,7 +236,7 @@ window.onload = function () {
         let ctx = document.getElementById('average-example').getContext('2d');
         new Chart(ctx, {
             // The type of chart we want to create
-            type: 'line',
+            type: 'bar',
 
             // The data for our dataset
             data: {
