@@ -15,10 +15,11 @@
 
       <section>
         <div id="title">
-          <p><img src="{{ '/assets/img/emissions-api-8.svg' | relative_url }}"
-                  /></p>
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
+          <a href=/ title="Emissions API :: Home">
+            <img src="{{ '/assets/img/emissions-api-8.svg' | relative_url }}"/>
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            <p>{{ site.description | default: site.github.project_tagline }}</p>
+          </a>
           <hr>
 
           {% if page.name == "index.md" %}
