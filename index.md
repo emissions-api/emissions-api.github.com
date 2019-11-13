@@ -1,3 +1,6 @@
+> Note that the API is still **alpha**.
+> It is not yet stable and may change at any time without prior notice.
+
 *A [Prototype Fund](https://prototypefund.de/project/emissions-api/) project.*
 
 > **tl;dr** The European Space Agency's Sentinel-5P satellite is built to

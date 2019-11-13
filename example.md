@@ -1,7 +1,7 @@
 Plotting a Country's Daily Average CO-Values
 ============================================
 
-> Note that the API is still **beta**.
+> Note that the API is still **alpha**.
 > It is not yet stable and may change at any time without prior notice.
 > This guide should follow the latest state of the API.
 
