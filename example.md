@@ -7,7 +7,7 @@ Plotting a Country's Daily Average CO-Values
 
 
 In this example, we will be using the
-[Average API](https://demo.emissions-api.org/ui/#/default/emissionsapi.web.get_average)
+[Daily API](https://demo.emissions-api.org/ui/#/default/emissionsapi.web.get_average)
 to request data for a given country,
 then we will plot this data using [Chart.js](https://chartjs.org).
 The result should look somewhat like this:
@@ -21,11 +21,11 @@ Average Data
 
 First, let's take a look at the data.
 For this, we [request the average carbon monoxide data of Germany for February 2019
-](https://demo.emissions-api.org/api/v1/average.json?country=DE&begin=2019-02-01&end=2019-03-01)
+](https://demo.emissions-api.org/api/v1/daily.json?country=DE&begin=2019-02-01&end=2019-03-01)
 using the parameters *begin*, *end* and *country*.
 
 ```
-https://demo.emissions-api.org/api/v1/average.json
+https://demo.emissions-api.org/api/v1/daily.json
     ?country=DE
     &begin=2019-02-01
     &end=2019-03-01
@@ -41,22 +41,28 @@ The response should look like this:
 ```json
 [
   {
-    "average": 0.0330089744766232,
-    "end": "2019-02-01T14:17:51.014000Z",
-    "start": "2019-02-01T12:34:43.435000Z"
+    "time": {
+      "day": "2019-02-28",
+      "end": "2019-02-28T14:11:22.708000Z",
+      "start": "2019-02-28T12:28:14.891000Z"
+    },
+    "value": {
+      "average": 0.0349007441879697,
+      "count": 2270,
+      "max": 0.0443794205784798,
+      "min": 0.0246069729328156,
+      "standard deviation": 0.0026327394812207
+    }
   },
   {
-    "average": 0.032249495510353,
-    "end": "2019-02-02T13:58:41.698000Z",
-    "start": "2019-02-02T12:15:55.960000Z"
-  },
-  …
+    …
+  }
 ]
 ```
 
 What we get is a response in JSON format,
 listing the average value of carbon monoxide particles per square meter
-in the specified area.
+in the specified area and some other aggregation values.
 
 We also get the time of the first and last measurement made on each day in that area telling us during what time of day the measurements where taken.
 But we can mostly ignore the specific time for our use-case.
@@ -71,7 +77,7 @@ The next step is to request this data via JavaScript.
 For this, we first specify the URL we want to request:
 
 ```js
-const API_URL = 'https://demo.emissions-api.org/api/v1/average.json/'
+const API_URL = 'https://demo.emissions-api.org/api/v1/daily.json/'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 ```
 
@@ -82,7 +88,7 @@ For plotting, we can map the average values of the response objects to a simple 
 fetch(API_URL)
 .then(response => response.json())
 .then(data => {
-    let values = data.map(x => x.average);
+    let values = data.map(x => x.value.average);
     console.log(values);
     // logs:
     // (28) [0.0330089744766232, 0.032249495510353, 0.0360124611289537, …
@@ -90,10 +96,10 @@ fetch(API_URL)
 ```
 
 In addition to the carbon monoxide values, we can use the same data to also prepare labels for our chart.
-For that, we use the start value, cutting out only the day:
+For that, we use the *day* value, cutting out only the day of the month:
 
 ```js
-let labels = data.map(x => x.start.substring(8, 10)),
+let labels = data.map(x => x.time.day.substring(8, 10)),
 console.log(labels);
 // logs:
 // (28) ["01", "02", "03", "04", …
@@ -181,7 +187,7 @@ The basic idea now is to:
 The resulting code should look somehwat like this:
 
 ```js
-const api_url = 'https://demo.emissions-api.org/api/v1/average.json/'
+const api_url = 'https://demo.emissions-api.org/api/v1/daily.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 window.onload = function () {
     fetch(api_url)
@@ -232,7 +238,7 @@ That's it!
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
 <script>
-const api_url = 'https://demo.emissions-api.org/api/v1/average.json/'
+const api_url = 'https://demo.emissions-api.org/api/v1/daily.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 window.onload = function () {
     fetch(api_url)
@@ -245,11 +251,11 @@ window.onload = function () {
 
             // The data for our dataset
             data: {
-                labels: data.map(x => x.start.substring(8, 10)),
+                labels: data.map(x => x.time.day.substring(8, 10)),
                 datasets: [{
                     label: 'Germany',
                     backgroundColor: '#93bd20',
-                    data: data.map(x => x.average),
+                    data: data.map(x => x.value.average),
                 }]
             },
 
