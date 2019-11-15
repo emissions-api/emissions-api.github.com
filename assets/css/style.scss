@@ -16,6 +16,10 @@
   border-radius: 5px;
   min-width: 105px;
   margin: 15px;
+
+  i {
+    padding-right: 5px;
+  }
 }
 
 #title a.button:hover {
@@ -36,9 +40,21 @@
   margin-bottom: 20px;
 }
 
+section {
+  padding-bottom: 0;
+}
+
 .credits {
   background-color: #252525;
   padding: 25px;
+}
+
+.social {
+  background-color: #252525;
+  a {
+    padding: 45px 25px;
+    font-size: 32px;
+  }
 }
 
 footer {
