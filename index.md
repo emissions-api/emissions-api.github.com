@@ -1,8 +1,3 @@
-> Note that the API is still **alpha**.
-> It is not yet stable and may change at any time without prior notice.
-
-*A [Prototype Fund](https://prototypefund.de/project/emissions-api/) project.*
-
 > **tl;dr** The European Space Agency's Sentinel-5P satellite is built to
 > monitor air quality data (carbon hydroxide, sulfur monoxide, ozone, …). All data
 > gathered are publicly available …if you know what to do with those data sets,

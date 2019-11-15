@@ -1,11 +1,6 @@
 Plotting a Country's Daily Average CO-Values
 ============================================
 
-> Note that the API is still **alpha**.
-> It is not yet stable and may change at any time without prior notice.
-> This guide should follow the latest state of the API.
-
-
 In this example, we will be using the
 [Average API](https://demo.emissions-api.org/ui/#/default/emissionsapi.web.get_average)
 to request data for a given country,
