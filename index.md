@@ -54,7 +54,3 @@ the satellite data of the Copernicus program, but who do not want to work with
 huge amounts of scientific data directly. We will provide examples and
 libraries to quickly get you started without being an expert in satellite data
 analysis.
-
-
-- [Twitter](https://twitter.com/emissions_api)
-- [Mastodon](https://mastodon.social/@emissions_api)

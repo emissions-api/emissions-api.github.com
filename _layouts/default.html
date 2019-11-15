@@ -6,6 +6,10 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+          integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+          crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
@@ -25,12 +29,16 @@
           {% if page.name == "index.md" %}
           <a class=button
              href=https://demo.emissions-api.org>
+             <i class="fas fa-globe-africa"></i>
              API <span>alpha</span></a>
           <a class=button
              href="{{ site.github.owner_url }}">
-             View On GitHub</a>
+             <i class="fab fa-github"></i>
+             GitHub</a>
           <a class=button
              href=example.html>
+             <!-- <i class="fas fa-book"></i>  ← for once we have more examples -->
+             <i class="fas fa-chart-area"></i>
              Examples</a>
           {% endif %}
         </div>
@@ -41,7 +49,19 @@
 
     </div>
 
+
     <footer>
+      <div class=social>
+        <a href=https://twitter.com/emissions_api
+           title=Twitter
+           class="fab fa-twitter"></a>
+        <a href=https://github.com/emissions-api
+           title=GitHub
+           class="fab fa-github"></a>
+        <a href=https://mastodon.social/@emissions_api
+           title=Mastodon
+           class="fab fa-mastodon"></a>
+		</div>
 
       <a href=https://prototypefund.de/en
          title="A Prototypefund Project">
