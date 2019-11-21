@@ -66,7 +66,7 @@ The next step is to request this data via JavaScript.
 For this, we first specify the URL we want to request:
 
 ```js
-const API_URL = 'https://demo.emissions-api.org/api/v1/average.json/'
+const API_URL = 'https://demo.emissions-api.org/api/v1/average.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 ```
 
@@ -176,7 +176,7 @@ The basic idea now is to:
 The resulting code should look somehwat like this:
 
 ```js
-const api_url = 'https://demo.emissions-api.org/api/v1/average.json/'
+const api_url = 'https://demo.emissions-api.org/api/v1/average.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 window.onload = function () {
     fetch(api_url)
@@ -227,7 +227,7 @@ That's it!
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
 <script>
-const api_url = 'https://demo.emissions-api.org/api/v1/average.json/'
+const api_url = 'https://demo.emissions-api.org/api/v1/average.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 window.onload = function () {
     fetch(api_url)
