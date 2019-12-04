@@ -53,5 +53,4 @@ analysis.
 Publications
 ------------
 
- - [Floss-Weekly Podcast Episode 555: Emissions API](https://twit.tv/shows/floss-weekly/episodes/555)
-
+ - [FLOSS Weekly podcast episode 555: Emissions API](https://twit.tv/shows/floss-weekly/episodes/555)
