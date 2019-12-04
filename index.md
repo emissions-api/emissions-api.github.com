@@ -50,9 +50,8 @@ huge amounts of scientific data directly. We will provide examples and
 libraries to quickly get you started without being an expert in satellite data
 analysis.
 
-Publishments
+Publications
 ------------
 
  - [Floss-Weekly Podcast Episode 555: Emissions API](https://twit.tv/shows/floss-weekly/episodes/555)
-
 
