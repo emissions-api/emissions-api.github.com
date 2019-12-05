@@ -5,7 +5,7 @@ There are various ways of working with the satellite based emissions data we pro
 Here are some of our ideas.
 
 <example
-  name="Plotting a Country's Daily Average CO-Values"
+  name="Plotting a Country's Daily Average CO-Value"
   img="/assets/img/chart.js.png"
   href="examples/chart.js" ></example>
 

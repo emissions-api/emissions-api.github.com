@@ -1,5 +1,5 @@
-Plotting a Country's Daily Average CO-Values
-============================================
+Plotting a Country's Daily Average CO-Value
+===========================================
 
 In this example, we will be using the
 [Average API](https://demo.emissions-api.org/ui/#/default/emissionsapi.web.get_average)
