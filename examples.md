@@ -10,7 +10,7 @@ Here are some of our ideas.
   href="examples/chart.js" ></example>
 
 <example
-  name="Plotting Carbon Monoxide Concentrations on a Map using deck.gl"
+  name="3d-Visualizing Carbon Monoxide Concentrations"
   img="/assets/img/deck.gl.png"
   href="examples/deck.gl" ></example>
 

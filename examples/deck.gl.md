@@ -1,5 +1,5 @@
-Plotting Carbon Monoxide Concentrations on a Map using deck.gl
-==============================================================
+3d-Visualizing Carbon Monoxide Concentrations
+=============================================
 
 In this example we explain how to use [deck.gl](https://deck.gl/#/) –
 a WebGL-powered framework for data visualization created by [Uber](https://www.uber.com) –
