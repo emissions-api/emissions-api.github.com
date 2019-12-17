@@ -13,12 +13,12 @@ The Emissions API consists of several projects that are all available on [github
  - The [emissions-api](https://github.com/emissions-api/emissions-api) project uses the sentinel5dl and sentinel5algorithm and puts the data into a database and serves it via an api.
 
 **What is the source of the data?**  
-The data source is the [European Space Agency (ESA)](https://www.esa.int) satallite [Sentinel-5P](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P).
+The data source is the [European Space Agency (ESA)](https://www.esa.int) satellite [Sentinel-5P](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P).
 
 **How can I participate?**  
 This is an open source project hosted on github. This means everybody can bring input and help improving the project, by e.g.:
-- using the API (tag the project) and create awesome use cases by visualizating the data
-- forking the porject and working on issues
+- using the API (tag the project) and create awesome use cases by visualizing the data
+- forking the project and working on issues
 - collaborate on the documentation
 - creating issues with new ideas
 For more information about how to contribute see [here](https://github.com/emissions-api/emissions-api/blob/master/CONTRIBUTING.rst).
@@ -31,7 +31,7 @@ You can use the emissions API database by using the [project API](https://demo.e
 Or you can set up your own [database server](https://github.com/emissions-api/emissions-api/blob/master/README.rst).
 
 **What is the database needed for?**  
-The database is used to store and serve the pre-prcessed data for [further usage](https://github.com/emissions-api/project-notes/tree/master/user-stories).
+The database is used to store and serve the pre-processed data for [further usage](https://github.com/emissions-api/project-notes/tree/master/user-stories).
 
 **How can I set up my own database?**  
 If you want to set up your own database, you can do it by following the [project description](https://github.com/emissions-api/emissions-api/blob/master/README.rst).
