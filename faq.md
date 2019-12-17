@@ -1,7 +1,8 @@
 # FAQ
 
 **What is Emissions API?**  
-Like the project slogan suggests, Emissions API is an API (application programming interface) with it you get easy access to satellite-based emissions data.  
+Like the project slogan suggests, Emissions API is an API (application programming interface) with it you get easy access to satellite-based emissions data.
+
 With the [swaggerUI](https://demo.emissions-api.org/ui/) you can get a first feel for the data and submit test requests to our database (not all data imported yet from ESA-Database) and take a look on the data set.
 Furthermore it is possible to set up your own database where you can download data from the ESA of your concern.
 
