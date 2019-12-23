@@ -106,7 +106,7 @@ see [DeckGL (Scripting Interface)](https://deck.gl/#/documentation/deckgl-api-re
 To use this we additionally include:
 
 ```html
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 ```
 
 We also need to define a HTML-container used from deck.gl to work on:
@@ -114,7 +114,7 @@ We also need to define a HTML-container used from deck.gl to work on:
 ```html
 <div id="container" style="height: 500px;"></div>
 
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 ```
 
 Now we can start to write our JavaScript code.
@@ -173,7 +173,7 @@ For this, we can just copy most of the code we already have.
 ```html
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 
 <div id="container" style="height: 500px;"></div>
 ```
@@ -272,7 +272,7 @@ That's it!
 
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 <script>
 // A polygon describing the vague form of Germany
 const GERMANY = 'polygon=9.921906365609232,54.983104153048025,' +
