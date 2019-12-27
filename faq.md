@@ -3,9 +3,7 @@
 <details>
 <summary><h3> > What is Emissions API?</h3></summary>
   <div style="margin-left: 20px;">
-    Like the project slogan suggests, Emissions API is an API (application programming interface) with it you get easy access to satellite-based emissions data.<br>
-    With the <a href="https://api.emissions-api.org/ui/">swaggerUI</a> you can get a first feel for the data and submit test requests to our database and take a look on the data set.<br>
-    Furthermore it is possible to set up your own database where you can download data from the ESA of your concern.<br>
+    Like the project slogan suggests, Emissions API is an API (application programming interface) with it you get easy access to satellite-based emissions data. With the <a href="https://api.emissions-api.org/ui/">swaggerUI</a> you can get a feeling for the data set and submit test requests to our database.<br>Furthermore it is possible to set up your own database where you can download data from the ESA of your concern.<br>
   </div>
 <br></details>
 
@@ -31,7 +29,7 @@
 <details>
 <summary><h3> > What is a product?</h3></summary>
   <div style="margin-left: 20px;">
-    The satellite Sentinel-5 monitors different gas concentrations and aerosols in the atmosphere. Those different gases are called products.<br>
+    The satellite Sentinel-5 monitors different gas concentrations and aerosols in the atmosphere. Those different substances are called products.<br>
   </div>
 <br></details>
 
@@ -70,9 +68,9 @@
 <br></details>
 
 <details>
-<summary><h3> > Which products over what time are availabe via Emissions API?</h3></summary>
+<summary><h3> > Which products over, what time are availabe via Emissions API?</h3></summary>
   <div style="margin-left: 20px;">
-    We started with one product (CO) and imported from january til september 2019. But we are continuously working on importing more products over a longer period.<br>
+    We started with one product (CO) and imported from january til september 2019. But we are constantly working on importing more products over a longer period.<br>
   </div>
 <br></details>
 
