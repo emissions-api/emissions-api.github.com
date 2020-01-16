@@ -14,10 +14,10 @@ We are mostly following the [scripting get-started](https://github.com/uber/deck
 ## GeoJSON Data
 
 Let's take a look at the data first.
-We request all measured carbon monoxide values from Germany from – let's say – the fourth and fifth of February using the [geo.json](https://demo.emissions-api.org/ui/#/default/emissionsapi.web.get_data) API endpoint and the URL query parameters *begin*, *end* and *polygon*:
+We request all measured carbon monoxide values from Germany from – let's say – the fourth and fifth of February using the [geo.json](https://api.emissions-api.org/ui/#/default/emissionsapi.web.get_data) API endpoint and the URL query parameters *begin*, *end* and *polygon*:
 
 ```
-https://demo.emissions-api.org/api/v1/geo.json
+https://api.emissions-api.org/api/v1/geo.json
     ?begin=2019-02-04
     &end=2019-02-06
     &polygon=9.921906365609232,54.983104153048025,9.9395797054529,54.596641954153256,…,9.921906365609232,54.983104153048025
@@ -85,7 +85,7 @@ const GERMANY = 'polygon=9.921906365609232,54.983104153048025,' +
     '9.921906365609232,54.983104153048025';
 
 // API URL
-const API_URL = 'https://demo.emissions-api.org/api/v1/geo.json?' +
+const API_URL = 'https://api.emissions-api.org/api/v1/geo.json?' +
     GERMANY + '&begin=2019-02-04&end=2019-02-06';
 ```
 
@@ -106,7 +106,7 @@ see [DeckGL (Scripting Interface)](https://deck.gl/#/documentation/deckgl-api-re
 To use this we additionally include:
 
 ```html
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 ```
 
 We also need to define a HTML-container used from deck.gl to work on:
@@ -114,7 +114,7 @@ We also need to define a HTML-container used from deck.gl to work on:
 ```html
 <div id="container" style="height: 500px;"></div>
 
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 ```
 
 Now we can start to write our JavaScript code.
@@ -173,7 +173,7 @@ For this, we can just copy most of the code we already have.
 ```html
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 
 <div id="container" style="height: 500px;"></div>
 ```
@@ -242,7 +242,7 @@ const GERMANY = 'polygon=9.921906365609232,54.983104153048025,' +
     '9.921906365609232,54.983104153048025';
 
 // API URL
-const API_URL = 'https://demo.emissions-api.org/api/v1/geo.json?' +
+const API_URL = 'https://api.emissions-api.org/api/v1/geo.json?' +
     GERMANY + '&begin=2019-02-04&end=2019-02-06';
 
 new deck.DeckGL({
@@ -272,7 +272,7 @@ That's it!
 
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-<script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+<script src="https://unpkg.com/deck.gl@7.3/dist.min.js"></script>
 <script>
 // A polygon describing the vague form of Germany
 const GERMANY = 'polygon=9.921906365609232,54.983104153048025,' +
@@ -335,7 +335,7 @@ const GERMANY = 'polygon=9.921906365609232,54.983104153048025,' +
     '9.921906365609232,54.983104153048025';
 
 // API URL
-const API_URL = 'https://demo.emissions-api.org/api/v1/geo.json?' +
+const API_URL = 'https://api.emissions-api.org/api/v1/geo.json?' +
     GERMANY + '&begin=2019-02-04&end=2019-02-06';
 
 new deck.DeckGL({
