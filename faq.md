@@ -36,7 +36,7 @@
 <details>
 <summary><h3> > Which products overall available via ESA?</h3></summary>
   <div style="margin-left: 20px;">
-    Sentinel-5 level-2 products are:
+    We are focused on Sentinel-5 level-2 products:
     <ul>
       <li>Ozone (O3)</li>
       <li>Nitrogen dioxide (NO2)</li>
@@ -51,6 +51,7 @@
       <li>UV spectrally resolved irradiance at surface</li>
     </ul>
   </div>
+  But the ESA have <a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-5/data-products">more</a>.<br>
 <br></details>
 
 <details>
@@ -98,21 +99,13 @@
 <details>
 <summary><h3> > Do I need a database on my own?</h3></summary>
   <div style="margin-left: 20px;">
-    You can use the emissions API database by using the <a href="https://api.emissions-api.org/ui/">project API</a> and use the data for your own purpose.
-    Or you can set up your own <a href="https://github.com/emissions-api/emissions-api/blob/master/README.rst">database server</a>.<br>
+    No, because you can use the emissions API database by using the <a href="https://api.emissions-api.org/ui/">project API</a> and use the resulting data for your own purpose.<br>But if you would like to set up your own database server click <a href="https://github.com/emissions-api/emissions-api/blob/master/README.rst">here</a>.<br>
   </div>
 <br></details>
 
 <details>
 <summary><h3> > What is the database needed for?</h3></summary>
   <div style="margin-left: 20px;">
-    The database is used to store and serve the pre-processed data for <a href="https://github.com/emissions-api/project-notes/tree/master/user-stories">further usage</a>.<br>
-  </div>
-<br></details>
-
-<details>
-<summary><h3> > How can I set up my own database?</h3></summary>
-  <div style="margin-left: 20px;">
-    If you want to set up your own database, you can do it by following the <a href="https://github.com/emissions-api/emissions-api/blob/master/README.rst">project description</a>.<br>
+    The database is used to store and serve the pre-processed data for <a href="https://github.com/emissions-api/project-notes/tree/master/user-stories">further usage</a> via the emissons API.<br>
   </div>
 <br></details>
