@@ -3,7 +3,7 @@
 <details>
 <summary><h3> > What is Emissions API?</h3></summary>
   <div style="margin-left: 20px;">
-    Like the project slogan suggests, Emissions API is an API (application programming interface) with it you get easy access to satellite-based emissions data. With the <a href="https://api.emissions-api.org/ui/">swaggerUI</a> you can get a feeling for the data set and submit test requests to our database.<br>Furthermore it is possible to set up your own database where you can download data from the ESA of your concern.<br>
+    Emissions API (application programming interface) is a service like the project slogan (easy access to satellite-based emissions data) suggest. With the <a href="https://api.emissions-api.org/ui/">swaggerUI</a> you can get a feeling for the data and submit test requests.<br>
   </div>
 <br></details>
 
@@ -14,7 +14,7 @@
     <ul>
       <li>The <a href="https://github.com/emissions-api/sentinel5dl">sentinel5dl</a> project downloads data from the ESA and stores these .nc files to your hard drive.</li>
       <li>The <a href="https://github.com/emissions-api/sentinel5algorithms">sentinel5algorithm</a> project pre processes the downloaded .nc files.</li>
-      <li>The <a href="https://github.com/emissions-api/emissions-api">emissions-api</a> project uses the sentinel5dl and sentinel5algorithm and puts the data into a database and serves it via an api.</li>
+      <li>The <a href="https://github.com/emissions-api/emissions-api">emissions-api</a> project uses the sentinel5dl and sentinel5algorithm and puts the data into a database and serves it via an API.</li>
     </ul>
   </div>
 <br></details>
@@ -29,7 +29,7 @@
 <details>
 <summary><h3> > What is a product?</h3></summary>
   <div style="margin-left: 20px;">
-    The satellite Sentinel-5 monitors different gas concentrations and aerosols in the atmosphere. Those different substances are called products.<br>
+    The satellite Sentinel-5P monitors different gas concentrations and aerosols in the atmosphere. Those different substances are called products.<br>
   </div>
 <br></details>
 
