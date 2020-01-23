@@ -84,6 +84,16 @@ footer img {
   margin: 65px auto;
 }
 
+details summary {
+  font-size: larger;
+  cursor: pointer;
+}
+
+details {
+  border-left: 1px solid silver;
+  padding-left: 10px;
+}
+
 @media (max-width: 730px) {
   footer a {
     display: block;
