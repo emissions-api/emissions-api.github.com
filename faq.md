@@ -38,11 +38,11 @@ Right now, Emissions API serves carbon monoxide measurements only.
 Several additional data products are available any may find their way into our API in the future.
 A few examples include:
 
-- Ozone (O³)
-- Nitrogen dioxide (NO²)
-- Sulfur dioxide (SO²)
+- Ozone (O₃)
+- Nitrogen dioxide (NO₂)
+- Sulfur dioxide (SO₂)
 - Formaldehyde (HCHO)
-- Methane (CH⁴)
+- Methane (CH₄)
 </details>
 
 <details>
