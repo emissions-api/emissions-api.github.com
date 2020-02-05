@@ -11,9 +11,32 @@
           integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
           crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <link rel="stylesheet" href="/lib/css/styles.css">
+    <script src="/lib/js/responsive-nav.js"></script>
   </head>
   <body>
+
+    <header>
+      <a href=/ title="Emissions API :: Home">
+        <img src="{{ '/assets/img/emissions-api-8.svg' | relative_url }}" height="40px" style="margin:5px 0px -5px 5px"/>
+      </a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item"><a href="/examples.html">
+            <i class="fas fa-book"></i></i> Examples</a></li>
+            <li class="menu-item"><a href="/faq.html">
+              <i class="fas fa-question-circle"></i> FAQ</a></li>
+          <li class="menu-item"><a href="https://api.emissions-api.org/ui/">
+            <i class="fas fa-globe-africa"></i> API (alpha)</a></li>
+          <li class="menu-item"><a href="https://github.com/emissions-api/emissions-api">
+            <i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="/lib/js/fastclick.js"></script>
+    <script src="/lib/js/scroll.js"></script>
+    <script src="/lib/js/fixed-responsive-nav.js"></script>
 
     <div class="wrapper">
 
@@ -34,14 +57,6 @@
           </div>
 
           {% if page.name == "index.md" %}
-          <a class=button
-             href=https://api.emissions-api.org>
-             <i class="fas fa-globe-africa"></i>
-             API <span>alpha</span></a>
-          <a class=button
-             href="{{ site.github.owner_url }}">
-             <i class="fab fa-github"></i>
-             GitHub</a>
           <a class=button
              href=examples.html>
              <i class="fas fa-book"></i>

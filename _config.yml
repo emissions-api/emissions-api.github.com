@@ -2,3 +2,6 @@ title: Emissions API
 description: Easy access to satellite-based emission data for everyone
 show_downloads: false
 theme: jekyll-theme-midnight
+markdown: kramdown
+kramdown:
+  parse_block_html: true
