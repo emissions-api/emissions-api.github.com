@@ -1,6 +1,6 @@
 > **tl;dr** The European Space Agency's Sentinel-5P satellite is built to
 > monitor air quality data (carbon hydroxide, sulfur monoxide, ozone, …). All data
-> gathered are publicly available …if you know what to do with those data sets.
+> gathered are publicly available …if you know what to do with those data sets – great.
 > But if not:
 >
 > Emissions API's mission is to provide easy access to this data without the
@@ -47,7 +47,7 @@ Target Audience
 This project targets developers who want to build their own services based on
 the satellite data of the Copernicus program, but who do not want to work with
 huge amounts of scientific data directly. We will provide examples and
-libraries to quickly get you started without having to become an expert in 
+libraries to quickly get you started without having to become an expert in
 satellite data analysis yourself.
 
 Publications
