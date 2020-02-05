@@ -53,4 +53,6 @@ satellite data analysis yourself.
 Publications
 ------------
 
+ - [Short introductory talk held at 36C3](https://media.ccc.de/v/36c3-10525-lightning_talks_day_3#t=1146)
+ - [Talk with a little bit of backstory about the project held at FOSDEM 2020](https://fosdem.org/2020/schedule/event/emissions_api/)
  - [FLOSS Weekly podcast episode 555: Emissions API](https://twit.tv/shows/floss-weekly/episodes/555)
