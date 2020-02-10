@@ -11,8 +11,8 @@
 > e.g. visually showing emissions of countries over time.
 
 
-Social Challenges We Want to Address
------------------------------------
+Our Goals
+---------
 
 Achievements of climate goals are so far only verifiable by a very small group
 of people with specialized know-how. As a result, public discussion remains
@@ -32,8 +32,8 @@ The project strives to create an application interface which lowers the barrier
 to use the data for visualization and/or analysis.
 
 
-Tackling the Problem
---------------------
+Our Approach
+------------
 
 The project's core is an API which can be used to query the processed data.
 For this purpose we develop a cloud service which queries the freely
@@ -41,8 +41,8 @@ accessible data of Sentinel-5P, aggregates it, stores it in a cache and makes
 it available.
 
 
-Target Audience
----------------
+Who is the API for?
+-------------------
 
 This project targets developers who want to build their own services based on
 the satellite data of the Copernicus program, but who do not want to work with
@@ -50,8 +50,8 @@ huge amounts of scientific data directly. We will provide examples and
 libraries to quickly get you started without having to become an expert in
 satellite data analysis yourself.
 
-Publications
-------------
+Media
+-----
 
  - [Short introductory talk held at 36C3](https://media.ccc.de/v/36c3-10525-lightning_talks_day_3#t=1146)
  - [Talk with a little bit of backstory about the project held at FOSDEM 2020](https://fosdem.org/2020/schedule/event/emissions_api/)
