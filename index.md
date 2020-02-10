@@ -1,4 +1,4 @@
-> **tl;dr** The European Space Agency's Sentinel-5P satellite is built to
+> The European Space Agency's Sentinel-5P satellite is built to
 > monitor air quality data (carbon hydroxide, sulfur monoxide, ozone, …). All data
 > gathered are publicly available …if you know what to do with those data sets – great.
 > But if not:
