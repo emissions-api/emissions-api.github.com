@@ -15,3 +15,8 @@ Here are some of our ideas.
   name="3d-Visualizing Carbon Monoxide Concentrations"
   img="/assets/img/deck.gl.png"
   href="examples/deck.gl" ></example>
+
+<example
+  name="Carbon Monoxide Highscore of Cities"
+  img="/assets/img/highscore.png"
+  href="examples/highscore" ></example>
