@@ -8,7 +8,7 @@ While it is pretty amazing that you can measure things on earth from outer space
 when you look at the raw data you quickly realize that they also come with some important limitations.
 This is why in this text we would like to give you a short overview about what you can expect from this data and what kind of questions you can tackle with it.
 
-## What you (can) see is what you get
+## What you see is what you get
 
 First, let's start with how the Sentinel-5P's instruments actually measure pollutants.
 The method used to estimate the concentrations of the chemical compounds is spectrophotometry.
