@@ -78,7 +78,7 @@ You can get an impression of this from the following animation that iterates thr
 
 ![polar night](/assets/img/world_201902_01-02.gif)
 
-For analyses of air quality data this means that you can only see temporal patterns that manifest themselves at scales bigger than one day.
+For analyses of air quality data this means that you can only see temporal patterns that manifest themselves at scales longer than one day.
 You could not demonstrate the effects a rush hour has on nitrogen dioxide emissions, for example, because you would never have data during that time of the day.
 However, you might have a better chance at detecting seasonal variations, like carbon monoxide emissions due to heating in winter.
 
