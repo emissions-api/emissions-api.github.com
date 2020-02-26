@@ -45,7 +45,7 @@ Additionally, for Emissions API we discard all the points that are below the qua
 
 Since the satellite scans lines of pixels while orbiting around the earth, the spatial resolution is determined by two factors:
 the number of pixels in the direction of the scan line and the recording frequency in the direction of flight
-(see figure 48 in the [mission page](https://directory.eoportal.org/web/eoportal/satellite-missions/c-missions/copernicus-sentinel-5p).
+(see figure 48 on the [mission page](https://directory.eoportal.org/web/eoportal/satellite-missions/c-missions/copernicus-sentinel-5p)).
 
 Sentinel-5P has a scanline width of approximately 2600 km.
 The spatial resolution of each pixel on the ground is given with 3.5 km.
