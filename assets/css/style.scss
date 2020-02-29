@@ -89,6 +89,10 @@ details summary {
   cursor: pointer;
 }
 
+details summary::-webkit-details-marker {
+  display:none;
+}
+
 details {
   border-left: 1px solid silver;
   padding-left: 10px;
