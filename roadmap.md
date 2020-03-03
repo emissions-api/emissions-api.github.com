@@ -100,9 +100,9 @@ The data reduction happens by mapping the measurements to a [Hexagonal Hierarchi
 That way, we will be able to control the amount of data and the accuracy by controlling the size of the hexagons
 to which the data is mapped.
 
-How will this look like? Here is an example, showing data for Germany using an H3 raster size of 5:
-
-![H3 Index Size 5](assets/img/h3-5-de.png)
+How will this look like?
+Here is an example, showing data for Germany using an H3 resolution of 4:
+![H3 Index Size 5](assets/img/h3-4-de.png)
 
 
 _–Osnabrück, Feb 25, 2020_
