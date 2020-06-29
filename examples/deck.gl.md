@@ -3,7 +3,7 @@
 
 In this example we explain how to use [deck.gl](https://deck.gl/#/) –
 a WebGL-powered framework for data visualization created by [Uber](https://www.uber.com) –
-to visualize the amount of carbon monoxide in Germany from a couple of days.
+to visualize the amount of carbon monoxide in the US from a couple of days.
 
 The result will look somewhat like this:
 
@@ -11,20 +11,22 @@ The result will look somewhat like this:
 
 We are mostly following the [scripting get-started](https://github.com/uber/deck.gl/blob/7.3-release/examples/get-started/scripting/mapbox/index.html) from deck.gl.
 
+This example is using version 2 of the API, which can be found under [https://api.v2.emissions-api.org](https://api.v2.emissions-api.org).
+
 ## GeoJSON Data
 
 Let's take a look at the data first.
-We request all measured carbon monoxide values from Germany from – let's say – the fourth and fifth of February 2019 using the [geo.json](https://api.emissions-api.org/ui/#/default/emissionsapi.web.get_data) API endpoint and the URL query parameters *begin*, *end* and *country*:
+We request all measured carbon monoxide values from the US from – let's say – the first till the fourth of May 2019 using the [geo.json](https://api.v2.emissions-api.org/ui/#/default/emissionsapi.web.get_data) API endpoint and the URL query parameters *begin*, *end* and *country*:
 
 ```
-https://api.emissions-api.org/api/v1/geo.json
-    ?country=DE
-    &begin=2019-02-04
-    &end=2019-02-06
+https://api.v2.emissions-api.org/api/v2/carbonmonoxide/geo.json
+    ?country=US
+    &begin=2019-05-01
+    &end=2019-05-04
 ```
 
-We are using the *country* url query parameter to receive carbon monoxide values from within the border of Germany.
-Further, note that we specify February 6th as end date since end represents the first date not being included in the resulting data.
+We are using the *country* url query parameter to receive carbon monoxide values from within the border of the US.
+Further, note that we specify Mai 4st as end date. The end date is not being included in the resulting data.
 
 The response should look like this:
 
@@ -34,28 +36,28 @@ The response should look like this:
     {
       "geometry": {
         "coordinates": [
-          14.129653,
-          53.374462
+          -158.917485,
+          64.41806
         ],
         "type": "Point"
       },
       "properties": {
-        "carbonmonoxide": 0.0349522158503532,
-        "timestamp": "2019-02-05T11:21:47.923000Z"
+        "timestamp": "2019-05-01T00:38:41.752000Z",
+        "value": 0.0315665081143379
       },
       "type": "Feature"
     },
     {
       "geometry": {
         "coordinates": [
-          13.63431,
-          53.800873
+          -158.381409,
+          64.106712
         ],
         "type": "Point"
       },
       "properties": {
-        "carbonmonoxide": 0.0341427326202393,
-        "timestamp": "2019-02-05T11:21:56.562000Z"
+        "timestamp": "2019-05-01T00:38:35.273000Z",
+        "value": 0.0318058542907238
       },
       "type": "Feature"
     },
@@ -76,8 +78,8 @@ So we only have to construct the URL:
 
 ```javascript
 // API URL
-const API_URL = 'https://api.emissions-api.org/api/v1/geo.json' +
-    '?country=DE&begin=2019-02-04&end=2019-02-06';
+const API_URL = 'https://api.v2.emissions-api.org/api/v2/carbonmonoxide/geo.json' +
+    '?country=US&begin=2019-05-01&end=2019-05-04';
 ```
 
 ## Plotting Data
@@ -118,12 +120,12 @@ Now let's define the visualization layer we have seen above:
 ```javascript
 new deck.HexagonLayer({
     extruded: true,
-    radius: 5000,
+    radius: 30000,
     data: API_URL,
     dataTransform: d => d.features,
-    elevationScale: 100,
-    getColorValue: points => points.reduce((sum, point) => sum + point.properties.carbonmonoxide, 0) / points.length,
-    getElevationValue: points => points.reduce((sum, point) => sum + point.properties.carbonmonoxide, 0) / points.length,
+    elevationScale: 300,
+    getColorValue: points => points.reduce((sum, point) => sum + point.properties.value, 0) / points.length,
+    getElevationValue: points => points.reduce((sum, point) => sum + point.properties.value, 0) / points.length,
     getPosition: d => d.geometry.coordinates,
 }),
 ```
@@ -139,10 +141,10 @@ new deck.DeckGL({
     container: 'container',
     mapboxApiAccessToken: '<your mapbox token>',
     mapStyle: "mapbox://styles/mapbox/dark-v9",
-    longitude: 10,
-    latitude: 50,
-    zoom: 5,
-    pitch: 50,
+    longitude: -97,
+    latitude: 40,
+    zoom: 3,
+    pitch: 60,
     layers: [
         …
     ]
@@ -173,26 +175,26 @@ For this, we can just copy most of the code we already have.
 
 ```javascript
 // API URL
-const API_URL = 'https://api.emissions-api.org/api/v1/geo.json' +
-    '?country=DE&begin=2019-02-04&end=2019-02-06';
+const API_URL = 'https://api.v2.emissions-api.org/api/v2/carbonmonoxide/geo.json' +
+    '?country=US&begin=2019-05-01&end=2019-05-04';
 
 new deck.DeckGL({
     container: 'container',
     mapboxApiAccessToken: '<your mapbox token>',
     mapStyle: "mapbox://styles/mapbox/dark-v9",
-    longitude: 10,
-    latitude: 50,
-    zoom: 5,
-    pitch: 50,
+    longitude: -97,
+    latitude: 40,
+    zoom: 3,
+    pitch: 60,
     layers: [
         new deck.HexagonLayer({
             extruded: true,
-            radius: 5000,
+            radius: 30000,
             data: API_URL,
             dataTransform: d => d.features,
-            elevationScale: 100,
-            getColorValue: points => points.reduce((sum, point) => sum + point.properties.carbonmonoxide, 0) / points.length,
-            getElevationValue: points => points.reduce((sum, point) => sum + point.properties.carbonmonoxide, 0) / points.length,
+            elevationScale: 300,
+            getColorValue: points => points.reduce((sum, point) => sum + point.properties.value, 0) / points.length,
+            getElevationValue: points => points.reduce((sum, point) => sum + point.properties.value, 0) / points.length,
             getPosition: d => d.geometry.coordinates,
         }),
     ]
@@ -207,26 +209,26 @@ That's it!
 <script>
 
 // API URL
-const API_URL = 'https://api.emissions-api.org/api/v1/geo.json' +
-    '?country=DE&begin=2019-02-04&end=2019-02-06';
+const API_URL = 'https://api.v2.emissions-api.org/api/v2/carbonmonoxide/geo.json' +
+    '?country=US&begin=2019-05-01&end=2019-05-04';
 
 new deck.DeckGL({
     container: 'container',
     mapboxApiAccessToken: 'pk.eyJ1Ijoic2hhYXJkaWUiLCJhIjoiY2szbjlicnE0MHVoYzNjdDV2am10aW1lcSJ9.5bevFIGGAqXzH5hZX3EQWQ',
     mapStyle: "mapbox://styles/mapbox/dark-v9",
-    longitude: 10,
-    latitude: 50,
-    zoom: 5,
-    pitch: 50,
+    longitude: -97,
+    latitude: 40,
+    zoom: 3,
+    pitch: 60,
     layers: [
         new deck.HexagonLayer({
             extruded: true,
-            radius: 5000,
+            radius: 30000,
             data: API_URL,
             dataTransform: d => d.features,
-            elevationScale: 100,
-            getColorValue: points => points.reduce((sum, point) => sum + point.properties.carbonmonoxide, 0) / points.length,
-            getElevationValue: points => points.reduce((sum, point) => sum + point.properties.carbonmonoxide, 0) / points.length,
+            elevationScale: 300,
+            getColorValue: points => points.reduce((sum, point) => sum + point.properties.value, 0) / points.length,
+            getElevationValue: points => points.reduce((sum, point) => sum + point.properties.value, 0) / points.length,
             getPosition: d => d.geometry.coordinates,
         }),
     ]

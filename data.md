@@ -96,4 +96,4 @@ However, satellite based data can then help you to monitor places where it is di
 Say, if you want to track emissions on [ship routes](https://www.esa.int/ESA_Multimedia/Images/2018/07/Nitrogen_dioxide_from_Sentinel-5P).
 
 As you can see there are numerous possiblities to make use of satellite based emission measurements, especially, if you know how to best use this data.
-Now that you do, you can hit the ground running and start coding using the [Emissions API](https://api.emissions-api.org/ui/)!
+Now that you do, you can hit the ground running and start coding using the [Emissions API](https://api.v2.emissions-api.org/ui/)!

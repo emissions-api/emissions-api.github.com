@@ -2,7 +2,7 @@ Plotting a Country's Daily Average CO-Value
 ===========================================
 
 In this example, we will be using the
-[Average API](https://api.emissions-api.org/ui/#/default/emissionsapi.web.get_average)
+[Average API V2](https://api.v2.emissions-api.org/ui/#/default/emissionsapi.web.get_average)
 to request data for a given country,
 then we will plot this data using [Chart.js](https://chartjs.org).
 The result should look somewhat like this:
@@ -16,11 +16,11 @@ Average Data
 
 First, let's take a look at the data.
 For this, we [request the average carbon monoxide data of Germany for February 2019
-](https://api.emissions-api.org/api/v1/average.json?country=DE&begin=2019-02-01&end=2019-03-01)
+](https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=DE&begin=2019-02-01&end=2019-03-01)
 using the parameters *begin*, *end* and *country*.
 
 ```
-https://api.emissions-api.org/api/v1/average.json
+https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json
     ?country=DE
     &begin=2019-02-01
     &end=2019-03-01
@@ -66,7 +66,8 @@ The next step is to request this data via JavaScript.
 For this, we first specify the URL we want to request:
 
 ```js
-const API_URL = 'https://api.emissions-api.org/api/v1/average.json'
+const api_url = 'https://api.v2.emissions-api.org'
+        + '/api/v2/carbonmonoxide/average.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 ```
 
@@ -176,7 +177,8 @@ The basic idea now is to:
 The resulting code should look somehwat like this:
 
 ```js
-const api_url = 'https://api.emissions-api.org/api/v1/average.json'
+const api_url = 'https://api.v2.emissions-api.org'
+        + '/api/v2/carbonmonoxide/average.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 window.onload = function () {
     fetch(api_url)
@@ -227,7 +229,8 @@ That's it!
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
 <script>
-const api_url = 'https://api.emissions-api.org/api/v1/average.json'
+const api_url = 'https://api.v2.emissions-api.org'
+        + '/api/v2/carbonmonoxide/average.json'
         + '?country=DE&begin=2019-02-01&end=2019-03-01'
 window.onload = function () {
     fetch(api_url)
