@@ -7,7 +7,7 @@ What is Emissions API?
 </summary>
 
 Emissions API is a service providing a REST interface to easily access satellite-based emissions data from the European Space Agency's Sentinel-5P satellite.
-Use the [Swagger UI](https://api.emissions-api.org/ui/) to get an overview of the interface and to submit test requests.
+Use the [Swagger UI](https://api.v2.emissions-api.org/ui/) to get an overview of the interface and to submit test requests.
 </details>
 
 
@@ -34,7 +34,7 @@ Data source is the [European Space Agency's](https://www.esa.int) satellite [Sen
 What types of emissions are available?
 </summary>
 
-Right now, Emissions API serves carbon monoxide measurements only.
+Right now, Emissions API serves carbon monoxide and methane measurements only.
 Several additional data products are available any may find their way into our API in the future.
 A few examples include:
 
@@ -42,7 +42,6 @@ A few examples include:
 - Nitrogen dioxide (NO₂)
 - Sulfur dioxide (SO₂)
 - Formaldehyde (HCHO)
-- Methane (CH₄)
 </details>
 
 <details>
@@ -50,7 +49,7 @@ A few examples include:
 What is the time period for which data is available?
 </summary>
 
-We currently serve data from January to September 2019.
+We currently serve data from January 2019 to now.
 We are working to extend this to provide data for the full life-span of Sentinel-5P
 which is planned for 7.5 years after its launch in December 2017.
 </details>

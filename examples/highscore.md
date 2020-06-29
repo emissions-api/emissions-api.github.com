@@ -2,7 +2,7 @@ Carbon Monoxide Highscore of Cities
 ===================================
 
 In this example, we will be using the
-[Statistics API](https://api.emissions-api.org/ui/#/default/emissionsapi.web.get_statistics)
+[Statistics API V2](https://api.v2.emissions-api.org/ui/#/default/emissionsapi.web.get_statistics)
 to request a daily average for a number of cities which we will then put on a highscore
 based on their carbon monoxide measurements.
 
@@ -28,11 +28,11 @@ Statistical Data
 
 First, let's take a look at the data we want to use.
 For this, we [request the statistical carbon monoxide data of a specific day and location
-](https://api.emissions-api.org/api/v1/statistics.json?interval=day&begin=2019-02-01&end=2019-02-02&point=13.4050,52.5200)
+](https://api.v2.emissions-api.org/api/v2/carbonmonoxide/statistics.json?interval=day&begin=2019-02-01&end=2019-02-02&point=13.4050,52.5200)
 using the parameters *begin*, *end*, *interval* and *point*.
 
 ```
-https://api.emissions-api.org/api/v1/statistics.json
+https://api.v2.emissions-api.org/api/v2/carbonmonoxide/statistics.json
     ?interval=day
     &begin=2019-02-01
     &end=2019-02-02
@@ -80,7 +80,8 @@ After all, we want to specify multiple cities in the end.
 
 ```js
 const berlin = '13.4050,52.5200',
-      baseurl = 'https://api.emissions-api.org/api/v1/statistics.json'
+      baseurl = 'https://api.v2.emissions-api.org'
+        + '/api/v2/carbonmonoxide/statistics.json'
         + '?interval=day&begin=2019-02-01&end=2019-02-02&point=';
 ```
 
@@ -158,7 +159,7 @@ Still, this already gives you a fully functional highscore you can now expand fo
 
 <script>
 
-const baseurl = 'https://api.emissions-api.org/api/v1/statistics.json?interval=day&begin=2019-02-01&end=2019-02-02&point=',
+const baseurl = 'https://api.v2.emissions-api.org/api/v2/carbonmonoxide/statistics.json?interval=day&begin=2019-02-01&end=2019-02-02&point=',
       berlin = '13.4050,52.5200',
       newyork = '74.0060,40.7128',
       beijing = '116.4074,39.9042',
