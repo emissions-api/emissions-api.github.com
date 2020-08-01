@@ -29,7 +29,7 @@
           <li class="menu-item"><a href="/faq.html">
             <i class="fas fa-question-circle"></i> FAQ</a></li>
           <li class="menu-item"><a href="https://api.v2.emissions-api.org/ui/">
-            <i class="fas fa-globe-africa"></i> API (alpha)</a></li>
+            <i class="fas fa-globe-africa"></i> API</a></li>
         </ul>
       </nav>
     </header>
@@ -48,20 +48,6 @@
             <p>{{ site.description | default: site.github.project_tagline }}</p>
           </a>
           <hr>
-
-          <div class=alpha>
-            The API is still in its early stages.
-            Please expect it to change at any time without prior notice.
-            Follow the development on <a href=https://github.com/emissions-api/emissions-api>
-              GitHub</a> for details.
-          </div>
-
-          {% if page.name == "index.md" %}
-          <a class=button
-             href=examples.html>
-             <i class="fas fa-book"></i>
-             Examples</a>
-          {% endif %}
         </div>
 
         {{ content }}
