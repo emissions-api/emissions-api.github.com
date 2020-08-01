@@ -49,7 +49,7 @@ A few examples include:
 What is the time period for which data is available?
 </summary>
 
-We currently serve data from January 2019 to now.
+We currently serve data measured since January 2019.
 We are working to extend this to provide data for the full life-span of Sentinel-5P
 which is planned for 7.5 years after its launch in December 2017.
 </details>
