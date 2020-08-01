@@ -3,7 +3,7 @@
 
 In this example we explain how to use [deck.gl](https://deck.gl/#/) –
 a WebGL-powered framework for data visualization created by [Uber](https://www.uber.com) –
-to visualize the amount of carbon monoxide in the US from a couple of days.
+to visualize the amount of carbon monoxide in the United States from a couple of days.
 
 The result will look somewhat like this:
 
@@ -11,12 +11,12 @@ The result will look somewhat like this:
 
 We are mostly following the [scripting get-started](https://github.com/uber/deck.gl/blob/7.3-release/examples/get-started/scripting/mapbox/index.html) from deck.gl.
 
-This example is using version 2 of the API, which can be found under [https://api.v2.emissions-api.org](https://api.v2.emissions-api.org).
+This example is using version two of the API, which can be found at [api.v2.emissions-api.org](https://api.v2.emissions-api.org).
 
 ## GeoJSON Data
 
 Let's take a look at the data first.
-We request all measured carbon monoxide values from the US from – let's say – the first till the fourth of May 2019 using the [geo.json](https://api.v2.emissions-api.org/ui/#/default/emissionsapi.web.get_data) API endpoint and the URL query parameters *begin*, *end* and *country*:
+We request all measured carbon monoxide values of the United States from first to fourth of May 2019 using the [geo.json](https://api.v2.emissions-api.org/ui/#/default/emissionsapi.web.get_data) API endpoint and the URL query parameters *begin*, *end* and *country*:
 
 ```
 https://api.v2.emissions-api.org/api/v2/carbonmonoxide/geo.json
@@ -25,8 +25,8 @@ https://api.v2.emissions-api.org/api/v2/carbonmonoxide/geo.json
     &end=2019-05-04
 ```
 
-We are using the *country* url query parameter to receive carbon monoxide values from within the border of the US.
-Further, note that we specify Mai 4st as end date. The end date is not being included in the resulting data.
+We are using the *country* url query parameter to receive carbon monoxide values from within the border of the United States.
+Further, note that we specify May 4th as end date. The end date is not being included in the resulting data.
 
 The response should look like this:
 
