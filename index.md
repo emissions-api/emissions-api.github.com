@@ -1,3 +1,19 @@
+<center style="padding-bottom: 25px;">
+<table id="statistics">
+  <tr style="font-weight: 800;">
+    <td>Product</td>
+    <td>First Data</td>
+    <td>Latest Data</td>
+  </tr>
+  <tr id="loading"><td><i>loading…</i></td><td></td></tr>
+</table>
+
+<a class="button" href="examples.html">
+  <i class="fas fa-book"></i> Try our examples</a>
+
+</center>
+
+
 > The European Space Agency's Sentinel-5P satellite is built to
 > monitor air quality data (carbon hydroxide, sulfur monoxide, ozone, …). All data
 > gathered are publicly available …if you know what to do with those data sets – great.
@@ -56,3 +72,40 @@ Media
  - [Short introductory talk held at 36C3](https://media.ccc.de/v/36c3-10525-lightning_talks_day_3#t=1146)
  - [Talk with a little bit of backstory about the project held at FOSDEM 2020](https://fosdem.org/2020/schedule/event/emissions_api/)
  - [FLOSS Weekly podcast episode 555: Emissions API](https://twit.tv/shows/floss-weekly/episodes/555)
+
+
+
+<script>
+
+const base_url = 'https://api.v2.emissions-api.org/api/v2/',
+      products_url = base_url + 'products.json',
+      data_range_postfix = '/data-range.json',
+      table = document.getElementById('statistics'),
+      loading = document.getElementById('loading');
+
+fetch(products_url)
+.then(r => r.json())
+.then(response => {
+  var products = response.map(p => p.name),
+      urls = products.map(p => base_url + p + data_range_postfix);
+
+  Promise.all(
+    urls.map(url => fetch(url).then(response => response.json()))
+  ).then(responses => {
+    responses.map((range, i) => {
+      var tr = document.createElement('tr');
+      [
+        products[i],
+        new Date(range.first).toDateString(),
+        new Date(range.last).toDateString()
+      ].forEach(txt => {
+        td = document.createElement('td');
+        td.innerText = txt;
+        tr.appendChild(td);
+      })
+      table.appendChild(tr);
+      loading.remove();
+    })
+  })
+})
+</script>
