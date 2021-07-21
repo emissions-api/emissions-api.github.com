@@ -174,7 +174,7 @@ The basic idea now is to:
 2. Create a chart and use these lists as data source for the chart.
 
 
-The resulting code should look somehwat like this:
+The resulting code should look somewhat like this:
 
 ```js
 const api_url = 'https://api.v2.emissions-api.org'
