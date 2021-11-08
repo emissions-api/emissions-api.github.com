@@ -5,9 +5,10 @@ In this example we explain how to use [deck.gl](https://deck.gl/#/) –
 a WebGL-powered framework for data visualization created by [Uber](https://www.uber.com) –
 to visualize the amount of carbon monoxide in the United States from a couple of days.
 
-The result will look somewhat like this:
+The result will look somewhat like this
+(use left mouse button to move, right mouse button to rotate the map, and the mouse wheel to zoom):
 
-<div id="container" style="height: 500px;"></div>
+<div id="container" oncontextmenu="return false;" style="height: 500px;"></div>
 
 We are mostly following the [scripting get-started](https://github.com/uber/deck.gl/blob/7.3-release/examples/get-started/scripting/mapbox/index.html) from deck.gl.
 
