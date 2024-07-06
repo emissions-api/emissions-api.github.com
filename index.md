@@ -17,6 +17,8 @@
 > a good time. We had fun developing and running this. But all good things need
 > to come to an end. Goodbye.
 
+---
+
 <center style="padding-bottom: 25px;">
 <table id="statistics">
   <tr style="font-weight: 800;">
