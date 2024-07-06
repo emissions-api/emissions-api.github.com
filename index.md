@@ -1,3 +1,22 @@
+> End of Life
+> -----------
+>
+> tl;dr: This service will shut down in July 2024.
+>
+> We started in 2019 with halve a year of financial support but a goal of
+> having the service run for at least two years. We far exceeded that goal.
+> This was possible due to Osnabrück University supporting us with
+> infrastructure to run Emissions API. Thank you!. Unfortunately, the ESA
+> changed their satellite data API which would need another major development
+> effort. At the same time, we would need to migrate the our infrastructure due
+> to the current size of data we accumulated over the years. This isn't
+> something we can handle with a few volunteers. We already far exceeded our
+> expectations when it comes to supporting this project, therefor we decided to
+> “let it be” and shut down the operation in July 2024. The infrastructure is
+> still available on GitHub for anyone wanting to run this on their own. It was
+> a good time. We had fun developing and running this. But all good things need
+> to come to an end. Goodbye.
+
 <center style="padding-bottom: 25px;">
 <table id="statistics">
   <tr style="font-weight: 800;">
@@ -8,8 +27,10 @@
   <tr id="loading"><td><i>loading…</i></td><td></td></tr>
 </table>
 
+<!--
 <a class="button" href="examples.html">
   <i class="fas fa-book"></i> Try our examples</a>
+-->
 
 </center>
 
