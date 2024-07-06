@@ -16,6 +16,8 @@
 > still available on GitHub for anyone wanting to run this on their own. It was
 > a good time. We had fun developing and running this. But all good things need
 > to come to an end. Goodbye.
+>
+> —The Emissions API Team
 
 ---
 
